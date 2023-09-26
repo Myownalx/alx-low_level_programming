@@ -2,10 +2,10 @@
 
 /**
  * _memcpy - function name
- * @dest: parameter a
- * @src: parameter b
- * @n: parameter c
- * Return: dest
+ * @dest: destination parameter
+ * @src: source parameter
+ * @n: function paramerter
+ * Return: copied memory
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
@@ -16,5 +16,5 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	{
 		dest[m] = src[m];
 	}
-	return (0);
+	return (dest);
 }
