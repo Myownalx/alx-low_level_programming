@@ -1,1 +1,1 @@
-This is my directory for C - Static Library projects
+27th of october, 2023
