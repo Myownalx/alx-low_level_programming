@@ -1,38 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 
 /**
- * main - Adds numbers
- * @argc: Argument count
- * @argv: Argument Adeleke
- *
- * Return: 0 if successful, 1 otherwise
+ * main - Entry point
+ * @argc: argument count
+ * @argv: argument vector
+ * Return: Always 0
  */
-
-int main(int argc,  char *argv[])
+int main(int argc, char *argv[])
 {
-	int result = 0, i, j;
+	int mut;
 
-	if (argc == 1)
+	if (argc == 3)
 	{
-		printf("%i\n", 0);
+		mut = atoi(argv[1]) * atoi(argv[2]);
+		printf("%d\n", mut);
 		return (0);
 	}
-
-	for (i = 1; i < argc; i++)
+	else
 	{
-		for (j = 0; argv[i][j] != '\0'; j++)
-		{
-			if (!(isdigit(argv[i][j])))
-			{
-				printf("Error\n");
-				return (1);
-			}
-		}
-		result += atoi(argv[i]);
+		printf("Error\n");
+		return (1);
 	}
-
-	printf("%i\n", result);
-	return (0);
 }
